@@ -2,13 +2,49 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>BlueMap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft BlueMap</title>
     <style>
-        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #28a745; /* 緑色のボタンにしています */
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
-    <iframe src="https://qr.paps.jp/j1cEy" allowfullscreen></iframe>
+
+    <div class="container">
+        <h2>Minecraft WebMap (BlueMap)</h2>
+        <p>以下のボタンをクリックすると、別タブでマップが開きます。</p>
+        <!-- ご指定の短縮URLを設定し、別タブで開くようにしています -->
+        <a href="https://qr.paps.jp/j1cEy" target="_blank" rel="noopener noreferrer" class="btn">
+            マップを開く
+        </a>
+    </div>
+
 </body>
 </html>
